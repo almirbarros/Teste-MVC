@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Numero";
+}
+
+<h2>Numero</h2>
+
+
+  <% using(Html.BeginForm())
+    {%>
+  <%: Html.TextBoxFor(model => model.Numero1, Model.Numero1) %><br />
+  <%: Html.TextBoxFor(model => model.Numero2, Model.Numero2) %><br />
+  <%: Model.Resultado%><br />
+<input type="submit" value="ok" />
+  <% } %>

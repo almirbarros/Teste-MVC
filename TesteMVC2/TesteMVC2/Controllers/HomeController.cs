@@ -23,7 +23,23 @@ namespace TesteMVC2.Controllers
         public ActionResult NumeroCalculo(NumeroModel modelo)
         {
             modelo.Resultado = modelo.Numero1 + modelo.Numero2;
+
+            modelo
             return View(modelo);
+        }
+
+
+
+        public ActionResult NumeroPrimo(int numero)
+        {
+            //Onde faço a logica?
+            return View();
+        }
+
+        public ActionResult NumeroImpar(int numero)
+        {
+            //Onde faço a logica?
+            return View();
         }
 
         public ActionResult About()
